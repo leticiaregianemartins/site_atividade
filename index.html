@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Site de indicação</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #BC8F8F"   style="font-family: Helvetica" >
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: #E9967A" href="#">Indicação</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color: #E9967A" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #E9967A" href="#">Indicação de livros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" style="color: #E9967A">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline" style="color: #E9967A" type="submit" >Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <img src="img/fantasia15.jpg"  width: 10% height: 100%>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 style="color: #E9967A">Os 10 melhores livros de fantasia</h1>
+            
+            <p><a class="btn btn-lg btn-dark"  style="color: #E9967A">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/romance7.jpg"  width: 30% height: 100% >
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 style="color: #E9967A">Os 10 melhores livros de romance.</h1>
+            <
+            <p><a class="btn btn-lg btn-dark"  style="color: #E9967A">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+         <img src="img/terror8.jpg"  >
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1 style="color: #E9967A">Os 10 melhores livros de terror.</h1>
+            
+            <p ><a class="btn btn-lg btn-dark"  style="color: #E9967A">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="img/fantasia6.jpg" class="rounded-circle" style="width: 60%">
+
+        <h2 style="color: #000000">Fantasia</h2>
+        <p style="color: #000000">Se você chegou até aqui, deve ser como eu: um aficionado por literatura de ficção fantástica. 
+				Esse gênero, em geral, é aplicado a histórias fictícias centradas em elementos não existentes, baseados em lendas e suposições não comprovadas pela ciência, em geral repletos de seres inverossímeis, 
+				imaginários e mágicos, geralmente frutos de uma extensa criatividade por parte do autor.</p>
+        <p><a class="btn btn-lg btn-dark"  style="color: #E9967A">Saiba mais</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+         <img src="img/romance4.jpg" class="rounded-circle" style="width: 65%">
+
+        <h2 style="color: #000000">Romance</h2>
+        <p style="color: #000000">Os livros românticos são capazes de nos transportar para histórias de amor de uma maneira única.
+				É ótimo quando terminamos um bom romance e ficamos com a sensação de ter vivido um pouquinho daquela paixão.
+				Assim, selecionamos os melhores livros de romance..</p>
+        <p><a class="btn btn-lg btn-dark"  style="color: #E9967A">Saiba mais</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/terror2.jpg" class="rounded-circle" style="width: 70%">
+
+        <h2 style="color: #000000">Terror</h2>
+        <p style="color: #000000">Os mais incríveis livros de terror, diferentemente dos longas-metragens, possuem enredos cheios de surpresas e meticulosamente detalhados que ocupam, de forma incrível, a mente dos leitores. 
+			Pensando nisso, apresentamos, a seguir, uma breve lista com os melhores livros de terror.</p>
+        <p><a class="btn btn-lg btn-dark"  style="color: #E9967A">Saiba mais</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+	
+      <div class="col-md-7" style="color: #000000">
+	   
+        <h2 class="featurette-heading fw-normal lh-1">Historia</h2>
+        <p class="lead">Tive a ideia de criar esse site com o objetivo de ajudar pessoas que assim como eu querem se inspirar atráves da literatura. 
+						Sempre que terminava um bom livro ficava perdida em encontra o proximo que fossem tão quanto o anterior, mas nunca encontrava dicas ou indicações, então criei esse site com esse objetivo em mente. </p>
+      </div>
+      <div class="col-md-5">
+         <img src="img/historia.jpg"  >
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" style="color: #000000">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Conteúdo</h2>
+        <p class="lead">Você encontrara diversos livros para diversos gostos aqui, por exemplo: ficção científica, romance,terror, fantasia, suspense e autoajuda,aventura</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class=   width="500" height="500"  src="img/conteudo2.jpg"  > 
+		<hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+ 
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  
+</main>
+<footer class="container d-flex justify-content-center"">
+    <p ><a style="color: #000000"  href="#">Voltar ao topo</a></p>
+ </footer>
+	<figure class="container d-flex justify-content-center"> <!-- imagens da rede social -->
+				<a title="Entre em contato pelo Linkedin" href="https://www.linkedin.com/in/cleberleao/" target="_blank"><img  src="img/linkedin.png"  width="40" height="40"  class="rounded-circle"></a>
+				<a title="Acesse nosso Instagram" href="https://www.instagram.com/professorcleberleao" target="_blank"><img  src="img/instagram2.jpg" width="40" height="40"  class="rounded-circle"></a>
+				<a title="Assista nossos vídeo no Youtube" href="https://www.youtube.com/@cleberleao1018" target="_blank"><img  src="img/youtube.jpg" width="40" height="40"  class="rounded-circle"></a>
+				<a title="Acesse nosso Facebook" href="https://www.facebook.com/cleber.leao.almeida" target="_blank"><img src="img/facebook.jpeg" width="40" height="40"  class="rounded-circle" ></a>
+
+   </figure>
+  </body>
+</html>
